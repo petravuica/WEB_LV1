@@ -24,28 +24,33 @@ header {
     border: none;
     font-size: 16px;
     position: absolute;  /* Postavljanje dugmeta na fiksnu poziciju unutar roditelja */
-    left: 0; /* Lijevo poravnanje */
-    top: 20px; /* Razmak od vrha stranice */
+    left: 1px; /* Lijevo poravnanje */
+    top: 1px; /* Razmak od vrha stranice */
     min-width: 70px; /* Minimalna širina dugmeta, može se prilagoditi */
     text-align: center; /* Centriranje teksta unutar dugmeta */
-    
+    z-index: 2;
+    width: 100px;
 }
+
+
 nav {
     position: relative;  /* Dodano za pozicioniranje padajućeg izbornika u odnosu na ovo */
     margin-top: 0px;
     background-color: #f1c40f;
-   
 }
 #navigacija {
     display: none;
-    background-color: #2e3ecc;
-    padding: 10px;
+    position: absolute;
+    top: 100%; /* Prikazuje se ispod dugmeta */
+    left: 1px;
+    background-color: #2c358b;
+    padding: 0;
     list-style-type: none;
     margin: 0;
-    left: 0;
-    position: absolute;
-    min-width: 150px;
-    margin-top: 50px;
+    min-width: 70px;
+    margin-top: 37px;
+    text-align: left;
+    z-index: 1;
 }
 
 nav a{
@@ -54,11 +59,16 @@ nav a{
     text-decoration: none;
     padding: 5px 10px;
 }
+/*
 .menu:hover + #navigacija {
+    display: block;
+}*/
+nav:hover #navigacija,
+.menu:focus + #navigacija {
     display: block;
 }
 nav a:hover {
-    background-color: #27ae60;
+    background-color: #34528e;
 }
 /*
 nav:hover + nav,
@@ -67,7 +77,12 @@ nav:hover{
 
 }
 */
-
+main {
+    margin-top: 20px;
+}
+section h1{
+font-size: 30px;
+}
 
 /* Sekcije */
 .content {
