@@ -4,8 +4,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--dodati meta tag bitan za stranicu-->
+        <!-- SEO i pristupačnost -->
         <meta name="description" content="Web stranica za prikaz vremenskih podataka i vizualizacija.">
-		<!--dodati link za css dokumente -->
+        <meta name="author" content="Petra Vuica">
+        <meta name="keywords" content="vremenski podaci, vizualizacija, HTML">
         <link rel="stylesheet" href="style.css">
 		<title>Web stranica za vremenske podatke</title> <!--promijeniti odgovarajući tekst na stranici
 		ovo je samo predložak-->
@@ -14,14 +16,7 @@
 		<header>
 		<h1>Dobrodosli na moju web stranicu sa vremenskim podacima</h1>
 		</header>
-		<!-- <header>
-       <nav aria-labelledby="primarna-navigacija">
-        <h2 id="primarna-navigacija">Primarna navigacija</h2>
-        
-        </nav>
-        </header>
-    -->
-
+		
         <nav aria-label="Navigacija"> <!-- dodati obilježja za ARIA-->
             <button class="menu" aria-expanded="false" aria-controls="navigacija">MENU</button> <!-- dodati da je navigacija lijevo poravnata i da je skrivena LV1: bez upotrebe javascripta -->
             <ul id="navigacija" >
@@ -30,11 +25,8 @@
                 <li><a href="grafikon.html">Grafikon</a></li>
             </ul>
         </nav>
-        
-        <main>
-            <section>
-                <h1>Vremenski Podaci</h1>
-
+        <h1>Vremenski Podaci</h1>
+        <main class="flex-container">
                     <table>
                         <tr>
                             <th>Temperature (°C)</th>
@@ -67,9 +59,18 @@
                         <tr><td>26</td><td>90</td><td>26</td><td>88</td><td>partly cloudy</td><td>998.97</td><td>4</td><td>Summer</td><td>2.5</td><td>coastal</td><td>Rainy</td></tr>
                         <tr><td>26</td><td>67</td><td>11</td><td>74</td><td>overcast</td><td>993.37</td><td>1</td><td>Spring</td><td>1.5</td><td>inland</td><td>Rainy</td></tr>
                     </table>
-            </section>
-
-		<section> <!-- dodati neke od obilježja za ARIA-->
+                    
+                    <aside class="image-container">
+			<a href="slike.html">
+				<picture>
+					<source srcset="slika.jpeg" media="(min-width: 768px)">
+					<img src="slika1.jpeg" alt="Prikaz vremenskih podataka">
+				</picture>
+			</a>
+		</aside>	
+        </main>
+		
+		<section aria-label="Glavna sekcija"> <!-- dodati neke od obilježja za ARIA-->
 			<h2>Ovo je glavna sekcija</h2>
 			<p>HTML5 omogucava semanticku strukturu koja poboljsava pristupacnost i SEO.</p>
 		</section>
@@ -79,11 +80,6 @@
 			<p>Ovdje se nalazi clanak s vaznim informacijama.</p>
 		</article>
 
-    </main>
-		
-
-		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
-		Nepotrebno obrisati! -->
 		<footer>
 		<p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
 		</footer>

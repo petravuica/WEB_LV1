@@ -32,7 +32,6 @@ header {
     width: 100px;
 }
 
-
 nav {
     position: relative;  /* Dodano za pozicioniranje padajućeg izbornika u odnosu na ovo */
     margin-top: 0px;
@@ -77,12 +76,7 @@ nav:hover{
 
 }
 */
-main {
-    margin-top: 20px;
-}
-section h1{
-font-size: 30px;
-}
+
 
 /* Sekcije */
 .content {
@@ -170,17 +164,24 @@ footer {
     background: #222;
     color: white;
 }
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px;
+}
 /* Tablica */
 table {
-    width: 90%;
+    width: 60%;
     border-collapse: collapse;
-    margin: 20px auto;
-    font-size: 18px;
-    text-align: left;
+    margin: 20px 0;
+    font-size: 14px;
+    /*text-align: left;*/
  
 }
 th, td {
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ddd; /* dodaje okvire oko svega */
 }
 th {
@@ -191,9 +192,32 @@ th {
 tr:hover {
     background-color: #ddd;
 }
- 
+aside{
+    margin: 50px;
+  }
+@keyframes imageEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+aside img {
+  animation: imageEntrance 1.5s ease-out forwards;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
 
- 
 @keyframes gradientSlide {
     0% {
         background-position: 0 0; /* Početna pozicija gradijenta (lijevo) */
@@ -211,7 +235,7 @@ tr:hover {
         background-position: 200% 0; /* Gradijent će završiti dalje desno, stvarajući klizanje */
     }
 }
-}
+
 /* Responzivnost */
 @media (max-width: 768px) {
     .data-container {
@@ -232,4 +256,40 @@ tr:hover {
     .form-flex input, .form-flex button {
         width: 100%;
     }
+    .flex-container{
+        display: block;
+    }
+}
+/* Stilizacija slike */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    width: 60%;
+    min-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+/* Responzivnost */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+
 }

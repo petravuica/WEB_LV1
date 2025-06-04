@@ -1,220 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Abel');
-
-body {
-  font-family: 'Abel', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-/*bilo*/
-h1 {
-  font-weight: 100;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-a.image-popup-vertical-fit {
-  cursor: -webkit-zoom-in;
-}
-
-.img-gallery-magnific {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.magnific-img {
-  width: 30%;
-  min-width: 250px;
-}
-
-.magnific-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.magnific-img img:hover {
-  transform: scale(1.03);
-}
-
-.magnific-img {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .magnific-img img {
-    transition: all 0.3s ease;
-  }
-  
-  .magnific-img:hover img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
-    z-index: 10;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  }
-/*do ovdje*/
-
-
-
-.galerija h1 {
-
-  color: darkblue;
-  font-size: 2rem;
-  text-align: center;
-}
-.galerija {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  /* Gallery item */
-  .galerija_slika {
-    width: calc(33.33% - 20px);
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .galerija_slika:hover {
-    transform: scale(1.05);
-  }
-  
-  .galerija_slika img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .galerija_slika figcaption {
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-  }
-  
-  /* Lightbox styles without JavaScript */
-  .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 999;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .lightbox:target {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lightbox img {
-    max-width: 90%;
-    max-height: 80vh;
-    margin: 0 auto;
-    border: 3px solid white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .lightbox figcaption {
-    color: white;
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-  }
-  
-  .close:hover {
-    background-color: rgba(255, 0, 0, 0.7);
-  }
-  
-  .lightbox .prev, .lightbox .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-  }
-  
-  .lightbox .prev {
-    left: 20px;
-  }
-  
-  .lightbox .next {
-    right: 20px;
-  }
-  
-  .lightbox .prev:hover, .lightbox .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  @media (max-width: 1200px) {
-    .galerija_slika {
-      width: calc(33.33% - 20px);
-    }
-  }
-  
-  @media (max-width: 900px) {
-    .galerija_slika {
-      width: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .galerija_slika {
-      width: 100%;
-    }
-    
-    .lightbox .prev,
-    .lightbox .next {
-      width: 30px;
-      height: 50px;
-      line-height: 50px;
-      font-size: 24px;
-    }
-  }
 /* Opći stilovi */
 body {
     font-family: Arial, sans-serif;
@@ -431,4 +214,158 @@ footer {
     .flex-container{
         display: block;
     }
+}
+main{
+    margin: 50px;
+}
+
+.opis-grafikona {
+    max-width: 800px;
+    margin: 30px auto 10px;
+    background-color: white;
+    padding: 20px;
+    border-left: 6px solid #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .opis-grafikona h2 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+
+:root {
+    /* Boje za žanrove */
+    --boja-animacija: #ffcc00;
+    --boja-drama: #ff6666;
+    --boja-komedija: #66ccff;
+    --boja-akcija: #66ff66;
+    --boja-ostalo: #999999;
+  
+    /* Dimenzije */
+    --velicina-grafikona: 250px;
+    --sirina-prstena: 60px;
+  }
+
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .pie-chart {
+    width: var(--velicina-grafikona);
+    height: var(--velicina-grafikona);
+    border-radius: 50%;
+    background: conic-gradient(
+      var(--boja-drama) 0% 35%,
+      var(--boja-komedija) 35% 60%,
+      var(--boja-akcija) 60% 75%,
+      var(--boja-animacija) 75% 80%,
+      var(--boja-ostalo) 80% 100%
+    );
+    position: relative;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pie-chart:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .pie-chart::after {
+    content: "";
+    position: absolute;
+    top: var(--sirina-prstena);
+    left: var(--sirina-prstena);
+    width: calc(100% - 2 * var(--sirina-prstena));
+    height: calc(100% - 2 * var(--sirina-prstena));
+    background: white;
+    border-radius: 50%;
+  }
+  
+  .legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .legend li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+   
+  .color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .sunce { background-color: var(--boja-animacija); }
+  .kisa     { background-color: var(--boja-drama); }
+  .oblaci  { background-color: var(--boja-komedija); }
+  .vedro    { background-color: var(--boja-akcija); }
+  .ostalo    { background-color: var(--boja-ostalo); }
+  
+  /* NOVO: Stupčasti grafikon - defaultno sakriven */
+.bar-chart {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-end;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.bar-chart .bar {
+  width: 40px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.bar-chart .bar:hover {
+  transform: scale(1.05);
+}
+
+/* Boje koriste iste klase kao za kružni graf */
+.bar.sunce { background-color: var(--boja-animacija); }
+.bar.kisa  { background-color: var(--boja-drama); }
+.bar.oblaci { background-color: var(--boja-komedija); }
+.bar.vedro { background-color: var(--boja-akcija); }
+.bar.ostalo { background-color: var(--boja-ostalo); }
+
+/* Ponašanje prema veličini ekrana */
+@media (min-width: 769px) {
+  .pie-chart {
+    display: none;
+  }
+
+  .bar-chart {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .bar-chart {
+    display: none;
+  }
+
+  .pie-chart {
+    display: block;
+  }
 }
