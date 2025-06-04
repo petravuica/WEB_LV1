@@ -173,7 +173,7 @@ footer {
 }
 /* Tablica */
 table {
-    width: 60%;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 14px;

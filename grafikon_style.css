@@ -236,10 +236,10 @@ main{
 
 :root {
     /* Boje za žanrove */
-    --boja-animacija: #ffcc00;
-    --boja-drama: #ff6666;
-    --boja-komedija: #66ccff;
-    --boja-akcija: #66ff66;
+    --boja-sunca: #ffcc00;
+    --boja-kisa: #ff6666;
+    --boja-oblaci: #66ccff;
+    --boja-vedro: #66ff66;
     --boja-ostalo: #999999;
   
     /* Dimenzije */
@@ -260,10 +260,10 @@ main{
     height: var(--velicina-grafikona);
     border-radius: 50%;
     background: conic-gradient(
-      var(--boja-drama) 0% 35%,
-      var(--boja-komedija) 35% 60%,
-      var(--boja-akcija) 60% 75%,
-      var(--boja-animacija) 75% 80%,
+      var(--boja-sunca) 0% 35%,
+      var(--boja-kisa) 35% 60%,
+      var(--boja-oblaci) 60% 75%,
+      var(--boja-vedro) 75% 80%,
       var(--boja-ostalo) 80% 100%
     );
     position: relative;
@@ -309,10 +309,10 @@ main{
     border-radius: 4px;
   }
   
-  .sunce { background-color: var(--boja-animacija); }
-  .kisa     { background-color: var(--boja-drama); }
-  .oblaci  { background-color: var(--boja-komedija); }
-  .vedro    { background-color: var(--boja-akcija); }
+  .sunce { background-color: var(--boja-sunca); }
+  .kisa     { background-color: var(--boja-kisa); }
+  .oblaci  { background-color: var(--boja-oblaci); }
+  .vedro    { background-color: var(--boja-vedro); }
   .ostalo    { background-color: var(--boja-ostalo); }
   
   /* NOVO: Stupčasti grafikon - defaultno sakriven */
@@ -343,10 +343,10 @@ main{
 }
 
 /* Boje koriste iste klase kao za kružni graf */
-.bar.sunce { background-color: var(--boja-animacija); }
-.bar.kisa  { background-color: var(--boja-drama); }
-.bar.oblaci { background-color: var(--boja-komedija); }
-.bar.vedro { background-color: var(--boja-akcija); }
+.bar.sunce { background-color: var(--boja-sunca); }
+.bar.kisa  { background-color: var(--boja-kisa); }
+.bar.oblaci { background-color: var(--boja-oblaci); }
+.bar.vedro { background-color: var(--boja-vedro); }
 .bar.ostalo { background-color: var(--boja-ostalo); }
 
 /* Ponašanje prema veličini ekrana */
